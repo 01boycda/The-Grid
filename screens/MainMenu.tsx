@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Text, View } from 'react-native';
 
 import { useFocusEffect, useNavigation } from '@react-navigation/native';
@@ -7,7 +7,6 @@ import CustomButton from '../components/CustomButton';
 
 import { getScore, saveScore } from '../services/dataService';
 import colours from '../constants/colours';
-import { LinearGradient } from 'expo-linear-gradient';
 import styles from '../constants/styles';
 import { ScreenNavigationProp } from '../constants/types';
 

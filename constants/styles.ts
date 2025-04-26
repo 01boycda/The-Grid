@@ -1,10 +1,6 @@
 import { StyleSheet } from "react-native";
 import colours from "./colours";
 
-import { Dimensions } from 'react-native';
-
-const screenDimensions = Dimensions.get('window');
-
 const styles = StyleSheet.create({
     arrowButton: {
         height: 100,
@@ -41,7 +37,6 @@ const styles = StyleSheet.create({
     gridContainer: {
         flexDirection: 'row',
         flexWrap: 'wrap',
-
         columnGap: 10,
         rowGap: 10,
         width: 320,
@@ -59,6 +54,14 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         columnGap: 20
     },
+
+    gameContainer: {
+        flex: 1,
+        backgroundColor: "transparent",
+        alignSelf: "center",
+        maxWidth: 300
+    },
+
 
 
     // TEXT

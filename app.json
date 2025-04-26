@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "arrowGame",
-    "slug": "arrowGame",
+    "name": "The Grid",
+    "slug": "arrowgame",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,7 +13,11 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.01boycda.arrowGame",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -26,6 +30,11 @@
     },
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "978bcc6b-8124-4db4-b9e0-1ceddf33ce75"
+      }
+    }
   }
 }

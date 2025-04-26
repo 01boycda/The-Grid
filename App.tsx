@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
 
-import { Platform, SafeAreaView, StyleSheet, View } from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
 
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
@@ -32,14 +32,14 @@ export default function App() {
             {
               translateY: current.progress.interpolate({
                 inputRange: [0, 1],
-                outputRange: [layouts.screen.width, 0],
+                outputRange: [layouts.screen.width * 2, 0],
               }),
             },
             {
               translateY: next
                 ? next.progress.interpolate({
                   inputRange: [0, 1],
-                  outputRange: [0, -layouts.screen.width],
+                  outputRange: [0, -layouts.screen.width * 2],
                 })
                 : 0,
             },
